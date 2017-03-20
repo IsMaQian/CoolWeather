@@ -1,0 +1,77 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+	</style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+	<style name="Base.AppTheme" parent="Base.AppTheme">
+	    <item name="@color/colorPrimary">#3F51B5</item>
+        <item name="@color/colorPrimaryDark">#303F9F</item>
+        <item name="@color/colorAccent">#FF4081</item>
+	</style>
+	
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+       <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    
+	<style name="PopupAnimation" parent="android:Animation">
+		<!--  item name="android:windowEnterAnimation">@anim/popup_enter</item-->
+		<!--item name="android:windowExitAnimation">@anim/popup_exit</item!-->
+	</style>
+	<style name="spinnerstyle">
+ *      <item name="android:background">#FFFFFFFF</item>
+ *      <item name="android:layout_marginLeft">10dp</item>
+ *      <item name="android:layout_marginRight">10dp</item>
+ *      <item name="android:layout_marginBottom">10dp</item>
+ *      <item name="android:paddingLeft">0dp</item>
+ *      <item name="android:paddingTop">3dp</item>
+ *      <item name="android:paddingBottom">5dp</item>
+ *      <item name="android:popupBackground">#FFFFFFFF</item>
+ *   </style>
+	 <style name="Theme.Transparent" parent="@android:style/Theme.Dialog">
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowBackground">@android:color/transparent</item>
+	    <item name="android:windowContentOverlay">@null</item>
+	    <item name="android:windowIsFloating">false</item>//dialog不是悬浮的
+	    <item name="android:backgroundDimEnabled">false</item>
+	    <item name="android:layoutAnimation">@null</item>  //dialog弹出时没有动画
+  	</style> 
+  	 <!-- NumberProgressBar进度条相关style -->
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    <style name="B4_Font_white">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#f1f1f1</item>
+    </style>
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">  
+        <item name="android:maxHeight">10.0dip</item>  
+        <item name="android:indeterminateOnly">false</item>  
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>  
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>  
+        <item name="android:minHeight">10.0dip</item>  
+        <item name="android:thumb">@drawable/seek_thumb</item>  
+        <item name="android:thumbOffset">15.2dip</item>  
+    </style>  
+</resources>

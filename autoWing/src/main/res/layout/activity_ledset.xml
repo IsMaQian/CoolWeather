@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.view.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sildingFinishLayoutlight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#686868" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutlight0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                android:id="@+id/textViewledset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="灯光设置"
+                android:textColor="#f1f1f1"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sound_and_vibrate"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/RelativeLayoutlight0"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:focusable="false" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/set_light_turnaround"
+                android:textColor="#f1f1f1"
+                android:textSize="14sp" />
+
+            <com.example.autowing.SwitchButton
+                android:id="@+id/light_turnaround_switch"
+                android:layout_width="80dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pushSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/sound_and_vibrate"
+            android:clickable="false"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/encoding_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/set_light_front"
+                android:textColor="#f1f1f1"
+                android:textSize="14sp" />
+
+            <com.example.autowing.SwitchButton
+                android:id="@+id/light_front_switch"
+                android:layout_width="80dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pushSetothoer"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/pushSetting"
+            android:clickable="false"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/encoding_backlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/set_light_back"
+                android:textColor="#f1f1f1"
+                android:textSize="14sp" />
+
+            <com.example.autowing.SwitchButton
+                android:id="@+id/light_back_switch"
+                android:layout_width="80dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Linear03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relaledcon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/pushSetothoer"
+            android:clickable="false"
+            android:focusable="false" >
+
+            <SeekBar
+                android:id="@+id/seekbarscrlight"
+                style="@style/Widget.SeekBar.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip"
+                android:layout_toRightOf="@+id/TextLedCon"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TextLedCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="LED调节  "
+                android:textColor="#f1f1f1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.example.view.SildingFinishLayout>

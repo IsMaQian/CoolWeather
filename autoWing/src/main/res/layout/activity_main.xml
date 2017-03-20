@@ -1,0 +1,81 @@
+<android.support.v4.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/drawerlayout"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+	<!-- <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> -->
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">   
+	    <!-- 导航栏 -->
+		<LinearLayout
+		    android:id="@+id/title_linearlayout"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:animateLayoutChanges="true"  
+			android:orientation="horizontal">
+			<include
+			    android:id="@+id/title_data"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        layout="@layout/titlebar"/>
+		</LinearLayout>    
+		
+		<!-- 中间地图 -->
+		<LinearLayout
+		    android:id="@+id/linear_center"
+	        android:layout_width="fill_parent"
+			android:layout_height="match_parent">
+			<include
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        layout="@layout/map" /> 
+		</LinearLayout>
+	</LinearLayout>
+	
+	<!-- 右侧面菜单弹窗 -->
+	<LinearLayout
+	    android:id="@+id/rightMenu"
+	    android:layout_gravity="right"
+	    android:layout_toRightOf="@+id/linear_left"
+        android:layout_width="450dp"
+		android:layout_height="match_parent"
+		android:background="#595959"
+	    android:orientation="horizontal">
+
+        <!-- <com.xiezhong.library.NavigationTabBar
+            android:id="@+id/ntb_vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:ntb_corners_radius="10dp"
+            app:ntb_inactive_color="#000"
+            app:ntb_preview_colors="@array/red_wine"/> -->
+		<com.example.library.NavigationTabBar
+            android:id="@+id/ntb_vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:ntb_corners_radius="10dp"
+            app:ntb_animation_duration="300"/>
+
+		<android.support.v4.view.ViewPager
+	        android:id="@+id/vp_vertical_ntb"
+	        android:layout_width="200dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"/>
+<!-- 	     <include
+	        android:id="@+id/item_vp"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        layout="@layout/item_vp" />  -->
+	</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

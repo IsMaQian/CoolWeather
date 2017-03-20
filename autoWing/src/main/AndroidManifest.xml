@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.autowing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<!--//地图包、搜索包需要的基础权限  -->
+      
+<!--允许程序打开网络套接字-->
+<uses-permission android:name="android.permission.INTERNET" />  
+<!--允许程序设置内置sd卡的写权限-->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+<!--允许程序获取网络状态-->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<!--允许程序访问WiFi网络信息-->
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!--允许程序读写手机状态和身份-->
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />    
+<!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+ <!-- 用于访问本地文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    <!-- 自动转屏 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon602x"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:screenOrientation="landscape"
+		android:configChanges="keyboardHidden|orientation"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <meta-data android:name="com.amap.api.v2.apikey" 
+            	   android:value="070ba3da8a721b4d8a47f3fce77c06c5">    
+             
+		</meta-data>
+		 <service android:name="com.amap.api.location.APSService"/>
+		 <activity
+            android:name="com.example.autowing.VerticalNtbActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.autowing.MainActivity"
+            android:label="@string/app_name" 
+             android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+          
+        
+        <activity
+            android:name="com.example.autowing.WorkIndexActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity
+            android:name="com.example.autowing.LedSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+         <activity
+            android:name="com.example.autowing.LightcoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.autowing.IndexSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.autowing.FlightModelActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+          <activity
+            android:name="com.example.autowing.slidewwwup"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+           <activity
+            android:name="com.example.autowing.StateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.autowing.NewAddActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="com.example.autowing.SendPictureActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+        </activity>
+         <activity
+            android:name="com.example.autowing.SettingActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+		    	<action android:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data android:resource="@xml/searchable" 
+			    android:name="android.app.searchable"/>
+        </activity>
+        <activity
+            android:name="com.example.offline.OfflineMapActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <activity
+            android:name="com.example.autowing.flightmodel"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.example.autowing.flightdcset"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <activity
+            android:name="com.example.autowing.flightykqset"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.example.autowing.flightvesion"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+    </application>
+
+</manifest>

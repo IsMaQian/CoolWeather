@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#00FF00</color>
+    <color name="thumbColor">#66aaaaaa</color>
+     <color name="textcolor_black">#333333</color>
+    <color name="textcolor_mine_normal">#666666</color>
+    <color name="textcolor_mine_red">#f56a30</color>
+    <color name="details">#898787</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="view_line">#9F9F9F</color>
+    <color name="bg_white">#FFFFFF</color>
+	<color name="bbutton_danger">#ffd9534f</color>
+	<color name="bbutton_danger_edge">#ffd43f3a</color>
+	<color name="bbutton_danger_pressed">#ffd2322d</color>
+	<color name="bbutton_danger_pressed_edge">#ffac2925</color>	
+	<color name="bbutton_danger_disabled">#a5d9534f</color>
+	<color name="bbutton_danger_disabled_edge">#a5d43f3a</color>
+	
+	<color name="bbutton_info">#ff5bc0de</color>
+	<color name="bbutton_info_edge">#ff46b8da</color>
+	<color name="bbutton_info_pressed">#ff39b3d7</color>
+	<color name="bbutton_info_pressed_edge">#ff269abc</color>
+	<color name="bbutton_info_disabled">#a55bc0de</color>
+	<color name="bbutton_info_disabled_edge">#a546b8da</color>
+	
+	<color name="spinnertrue">#75CAE3</color>
+	<color name="spinnerfalse">#FFFFFF</color>
+	
+	<color name="data_background">#636979</color>
+	<color name="data_background2">#1E2337</color>
+	
+	<color name="geomadata_statu">#FFFF00</color>
+	<color name="star_statu">#008000</color>
+	<color name="height_statu">#0000FF</color>
+	<color name="acceleration_statu">#FF00FF</color>
+	<color name="gyroscope_statu">#FF0000</color>
+	 <color name="grey"> #ebebeb</color>
+    <color name="black"> #000000</color>
+    <color name="darkgrey"> #C0C0C0</color>
+    <color name="white"> #FFFFFF</color>
+    <color name="red"> #FF0000</color>
+    <color name="f850_default_blue">#0079ff</color>
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="header_toast_bg">#ccebfc</color>
+    <color name="header_toast">#024ca1</color>
+    <color name="header_toast_line">#abdaf4</color>
+    <color name="offline_down_title">#909090</color>
+    <color name="offline_head_font">#FFFFFF</color>
+    <color name="gary">#898989</color>
+    <color name="taobao_black">#333333</color>
+    <color name="offline_down_size">#777777</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="progress_background">#ededed</color>
+    <color name="blue">#4c90f9</color>
+    <color name="itemlist">#f4f4f4</color>
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="translucent">#66000000</color>
+</resources>

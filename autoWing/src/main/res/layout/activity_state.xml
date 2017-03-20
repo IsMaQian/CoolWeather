@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.view.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sildingFinishLayoutstate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#686868">
+
+    <ScrollView
+        android:id="@+id/scrollViewstate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout0"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="0dp"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewstatetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="状态信息"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout0"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewvoltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="电    压： "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewVol_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/textViewvoltage"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/textViewvoltage"
+                    android:layout_marginRight="30dp"
+                    android:text="0.0V"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewvoltage"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout1"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewStanum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="星    数： "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewstrnumvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="0.5"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewStanum"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout2"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="加速度： "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewAcc_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewAcc"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="0.5"
+                    android:text="异常"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewAcc"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout3"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewZitai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="姿态角： "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewZitai_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textViewZitai"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="异常"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewZitai"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout4"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewMag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="地    磁： "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewMag_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/textViewMag"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="异常"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewMag"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout5"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewGyro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="陀螺仪： "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewGyro_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="异常"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewGyro"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout6"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewjixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="机    型："
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewjixingvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="四轴十字逆"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewjixing"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout7"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewyaokongqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="遥控器："
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewykqvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="14SG"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewyaokongqi"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout8"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewworkfuduw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="幅    度："
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewfuduwvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="0.0m"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewworkfuduw"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout9"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewgaoduw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="限    高："
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewgaoduwvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="0.0m"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewgaoduw"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout10"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewworkspeedw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="速    度："
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewworkspeedwvvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text="0.0m/s"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewworkspeedw"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/RelativeLayout11"
+                android:clickable="false"
+                android:focusable="false" >
+
+                <TextView
+                    android:id="@+id/textViewjuliw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="距    离："
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewjuiwvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="0.0m"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/stateView11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/textViewjuliw"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0909090" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</com.example.view.SildingFinishLayout>

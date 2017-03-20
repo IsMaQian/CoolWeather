@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#686868">
+    <!-- android:background="#686868"  -->
+<RelativeLayout
+        android:id="@+id/RelativeLayout0"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:focusable="false" 
+        >
+    <TextView
+        android:id="@+id/textViewindexset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" 
+        android:text="参数设置" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/RelativeLayout0"
+        android:layout_marginTop="20dp"
+        android:focusable="false" >
+
+        <Button
+            android:id="@+id/textViewworkindex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="12dp"
+            android:text="作业参数 "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+ 			<View
+                android:id="@+id/View00"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="0dp"
+                android:background="#F0909090" />
+              <View
+                android:id="@+id/View01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/textViewworkindex"
+                android:layout_marginTop="5dp"
+                android:background="#F0909090" />
+
+        <TextView
+            android:id="@+id/textViewi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/textViewworkindex"
+            android:textSize="24sp" 
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
+            android:text=" >" />
+
+
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/RelativeLayout1"
+        android:focusable="false" >
+
+        <Button
+            android:id="@+id/textViewmodelset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="12dp"
+            android:text="机型设置 "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewms"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/textViewmodelset"
+            android:textSize="24sp" 
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
+            android:text=" >" />
+
+              <View
+                android:id="@+id/View02"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/textViewmodelset"
+                android:layout_marginTop="5dp"
+                android:background="#F0909090" />
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/RelativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout2"
+        android:focusable="false" >
+
+        <Button
+            android:id="@+id/textViewlightset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="12dp"
+            android:text="灯光设置"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewls"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/textViewlightset"
+            android:textSize="24sp" 
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
+            android:text=" >" />
+
+                      <View
+                android:id="@+id/View03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/textViewlightset"
+                android:layout_marginTop="5dp"
+                android:background="#F0909090" />
+    
+   	 </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/RelativeLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout3"
+        android:focusable="false" >
+ 		<Button
+            android:id="@+id/textViewmaprec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="12dp"
+            android:text="地图缓存"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewls"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/textViewmaprec"
+            android:textSize="24sp" 
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
+            android:text=" >" />
+
+                      <View
+                android:id="@+id/View03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/textViewmaprec"
+                android:layout_marginTop="5dp"
+                android:background="#F0909090" />
+    
+    </RelativeLayout>
+          <RelativeLayout
+        android:id="@+id/RelativeLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout4"
+        android:focusable="false" >
+ 		<Button
+            android:id="@+id/textViewmapcle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="12dp"
+            android:text="航迹清除"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewls"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/textViewmapcle"
+            android:textSize="24sp" 
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="30dp"
+            android:text=" >" />
+
+                      <View
+                android:id="@+id/View05"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/textViewmapcle"
+                android:layout_marginTop="5dp"
+                android:background="#F0909090" />
+    
+    </RelativeLayout>
+     
+</RelativeLayout>

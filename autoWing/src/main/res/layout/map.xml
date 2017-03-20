@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+	<!--  com.baidu.mapapi.map.MapView
+        android:id="@id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" /-->
+	<com.amap.api.maps.MapView
+    	android:id="@+id/amapView"
+   		android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:clickable="true"/>
+	<Button
+	    android:id="@+id/btn_location"
+	    android:layout_width="45dp"
+	    android:layout_height="35dp"
+	    android:layout_toLeftOf="@+id/btn_mappattern"
+	    android:layout_marginRight="30dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="30dp"
+	    android:background="@drawable/location" />
+	
+	<!-- <Button
+	    android:id="@id/btn_compass"
+	    android:layout_width="45dp"
+	    android:layout_height="35dp"
+	    android:layout_toLeftOf="@id/btn_mappattern"
+	    android:layout_marginRight="15dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="30dp"
+	    android:background="@drawable/compass" /> -->
+	
+	<Button
+	    android:id="@+id/btn_land"
+	    android:layout_width="55dp"
+	    android:layout_height="45dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/down" />
+
+	<Button
+	    android:id="@+id/btn_fly"
+	    android:layout_width="55dp"
+	    android:layout_height="45dp"
+	    android:layout_above="@id/btn_land"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginBottom="30dp"
+	    android:background="@drawable/up" />
+	<!-- <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="#e0000000"
+	    android:orientation="horizontal" >
+	    
+	</LinearLayout> -->
+
+	<Button
+	    android:id="@+id/btn_wasMenu"
+	    android:layout_width="80dp"
+	    android:layout_height="100dp"
+	    android:layout_below = "@id/btn_mappattern"
+	    android:layout_alignLeft="@id/btn_mappattern"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/waysmenu" />
+	
+    <LinearLayout 
+        android:id="@+id/Linear_setpoint"
+        android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:gravity="center"
+		android:layout_height="wrap_content" 
+		android:layout_below = "@id/btn_mappattern"
+		android:layout_marginRight="70dp"
+		android:layout_marginTop="50dp"
+		android:layout_alignParentRight="true"
+		android:layout_gravity="center"
+		android:background="@anim/downbutton_corner">
+	
+		<LinearLayout
+		    android:id="@+id/linear_radius"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp" 
+			>
+			<EditText
+	        android:id="@+id/ed_radius"
+	        android:layout_marginLeft="5dp"
+	        android:layout_width="80dp"
+	        android:layout_height="42dp"
+	        android:layout_weight="1"
+	        android:textSize="12sp" 
+	        android:hint="请输入半径"/>
+			<Button 
+			android:id="@+id/waypoint_planset"
+			android:layout_weight="1"
+		    android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+			android:background="@drawable/button_bg2"
+			android:text="确定"/>
+	    </LinearLayout>
+	    
+		<LinearLayout
+		    android:id="@+id/linear_clearways"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"  >
+				
+			<Button 
+			     android:id="@+id/choose_waypoint"
+			    android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/button_bg"
+				android:text="选择路点"/>
+			<Button 
+			     android:id="@+id/clear_waypoint"
+			    android:layout_marginLeft="8dp"
+			    android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/button_bg"
+				android:text="清除路点"/>
+	    </LinearLayout>
+	    
+		<LinearLayout
+		    android:id="@+id/linear_savescheme"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:layout_marginTop="10dp">
+				
+			<Button 
+			     android:id="@+id/save_project"
+			    android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/button_bg"
+				android:text="保存方案"/>
+			<Button 
+			     android:id="@+id/choose_project"
+			    android:layout_marginLeft="8dp"
+			    android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/button_bg"
+				android:text="路点上传"/>
+	    </LinearLayout>
+	    <LinearLayout
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:layout_marginTop="10dp">
+			</LinearLayout>
+	</LinearLayout>
+	
+ 	<LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/shapes">
+
+        <TextView
+            android:id="@+id/uavspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="速度："
+            android:textColor="#1F1F1F" />
+
+        <TextView
+            android:id="@+id/speedvalue"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="0dp"
+            android:text="11"
+            android:textColor="#1F1F1F" />
+        <TextView
+            android:id="@+id/uavspeeddanwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="米/秒"
+            android:textColor="#1F1F1F" />
+         <TextView
+            android:id="@+id/uavhight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="高度："
+            android:textColor="#1F1F1F" />
+
+        <TextView
+            android:id="@+id/hightvalue"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="0dp"
+            android:text="12"
+            android:textColor="#1F1F1F" />
+        
+          <TextView
+            android:id="@+id/uavhightdanwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="米"
+            android:textColor="#1F1F1F" />
+        
+         <TextView
+            android:id="@+id/uavhight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="航向："
+            android:textColor="#1F1F1F" />
+
+        <TextView
+            android:id="@+id/hightvalue"
+            android:layout_width="30dp "
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:text="13"
+            android:textColor="#1F1F1F" />
+          <TextView
+            android:id="@+id/uavhighdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="度"
+            android:textColor="#1F1F1F" />
+    </LinearLayout>
+    <Button
+        android:id="@id/btn_mappattern"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/btn_location"
+        android:layout_alignBottom="@+id/btn_location"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/map_pattern" />
+
+</RelativeLayout>
