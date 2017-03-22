@@ -1,5 +1,7 @@
 package com.example.mq.coolweather;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -18,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+
     }
+
+
 }
